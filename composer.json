@@ -1,0 +1,37 @@
+{
+    "name": "sithu/image-helper",
+    "description": "Image Helper for Laravel 5.5",
+    "license": "MIT",
+    "keywords": ["laravel", "demo"],
+    "authors": [
+        {
+            "name": "sithumaungmaung",
+            "email": "sithu.mm88@gmail.com"
+        }
+    ],
+    "autoload-dev": {
+
+    },
+    "autoload": {
+        "psr-4": {
+            "Sithu\\ImageHelper\\": "src/"
+        },
+        "classmap": [
+            "src/ImageModel.php"
+        ]
+    },
+    "require": {
+    	"illuminate/support": "~5",
+        "sithu/image-helper": "^1.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sithu\\ImageHelper\\ImageHelperServiceProvider"
+            ],
+            "aliases": {
+                "ImageHelper": "Sithu\\ImageHelper\\ImageHelperFacade"
+            }
+        }
+    }
+}
